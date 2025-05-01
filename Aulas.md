@@ -1,0 +1,1 @@
+Arquivo para anotações pessoais de estudos 
