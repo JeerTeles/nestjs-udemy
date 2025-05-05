@@ -3,7 +3,7 @@
 /node_modules
 /build
 /.vscode
-generated/prisma
+/generated/prisma
 
 # Logs
 logs
