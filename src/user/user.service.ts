@@ -9,7 +9,9 @@ export class UserService {
 
     }
 
-    create({email, name, password}: CreatUserDTO) {
-
+    async create(data: CreatUserDTO) {
+        return this.prisma.users.create({
+            data: data
+        })
     }
 }
