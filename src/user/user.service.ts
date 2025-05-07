@@ -72,10 +72,6 @@ export class UserService {
     }
 
     async delete(id: number) {
-        /*const  userId = this.listUserId(id)
-        if(! await userId) {
-            throw new NotFoundException (`user with id ${id} does not exist`)
-        }*/
 
         await this.dontExist(id)
 
