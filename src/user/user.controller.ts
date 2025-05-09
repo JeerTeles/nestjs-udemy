@@ -22,7 +22,7 @@ export class UserController {
     async create(@Body() data: CreateUserDTO) {
         return this.userService.create(data);
     }
-    
+
     @Roles(Role.Admin)
     @Get()
     async listUsers() {
