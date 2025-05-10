@@ -18,7 +18,7 @@ export class UserController {
 
     constructor(private readonly userService: UserService) {}
 
-    
+    //@SkipThrottle -> ignora as regras do ThrottlerGuard 
     @Post()
     async create(@Body() data: CreateUserDTO) {
         return this.userService.create(data);
